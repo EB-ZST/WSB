@@ -1,0 +1,31 @@
+python
+
+def dodaj(a, b);
+  return a + b
+
+def odejmij(a, b);
+  return a - b
+
+def mnoz(a, b):
+  return a * b
+
+def dziel(a, b):
+  if b == 0:
+      return "Blad : Dzielenie przez zero"
+  return a / b
+
+print("Prosty kalkulator")
+a = float(input("Podaj pierwsza liczbe: "))
+b = float(input("Podaj druga liczbe: "))
+dzialanie = input("Wybierz dzialanie (+, -, *, /): ")
+
+if dzialanie == "+":
+   print("Wynik:", dodaj(a,b))
+elif dzialanie == "-":
+   print("Wynik:", odejmij(a,b))
+elif dzialanie == "*":
+   print("Wynik:", mnoz(a,b))
+elif dzialanie == "/":
+   print("Wynik:", dziel(a,b))
+else:
+   print("Nieznane dzialanie.")
